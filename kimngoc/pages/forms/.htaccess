@@ -1,0 +1,24 @@
+RewriteEngine On
+Options All -Indexes
+<Files .htaccess>
+Order Allow,Deny
+Deny from all
+</Files>
+
+ErrorDocument 404 /kimngoc/error
+
+RewriteRule ^error$ kimngoc/404.php [L]
+
+
+RewriteRule ^admin-congviec$ admin-congviec.php [L]
+RewriteRule ^admin-slider$ admin-slider.php [L]
+RewriteRule ^admin-mid$ admin-mid.php [L]
+RewriteRule ^admin-update-chamngon$ admin-update-chamngon.php [L]
+RewriteRule ^admin-update-congviec$ admin-update-congviec.php [L]
+RewriteRule ^admin-update-mid$ admin-update-mid.php [L]
+RewriteRule ^admin-update-slider$ admin-update-slider.php [L]
+
+
+
+
+

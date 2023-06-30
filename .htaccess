@@ -1,0 +1,28 @@
+
+
+RewriteEngine On
+Options All -Indexes
+<Files .htaccess>
+Order Allow,Deny
+Deny from all
+</Files>
+
+ErrorDocument 404 /error
+RewriteRule ^dich-vu$ dich-vu.php [L]
+RewriteRule ^error$ 404.php [L]
+RewriteRule ^home$ index.php [L]
+RewriteRule ^gioi-thieu$ gioi-thieu.php [L]
+RewriteRule ^lien-lac$ lien-lac.php [L]
+RewriteRule ^nhat-ki$ nhat-ki.php [L]
+RewriteRule ^tap-nhat-ky$ tap-nhat-ky.php [L]
+RewriteRule ^tieu-thuyet$ tieu-thuyet.php [L]
+
+
+
+
+RewriteRule ^phat-trien-web-ung-dung$ phat-trien-web-ung-dung.php [L]
+RewriteRule ^quang-cao-facebook$ quang-cao-facebook.php [L]
+RewriteRule ^thiet-ke-website$ thiet-ke-website.php [L]
+RewriteRule ^trai-nghiem-nguoi-dung$ trai-nghiem-nguoi-dung.php [L]
+RewriteRule ^viet-noi-dung-content$ viet-noi-dung-content.php [L]
+RewriteRule ^xay-dung-thuong-hieu$ xay-dung-thuong-hieu.php [L]

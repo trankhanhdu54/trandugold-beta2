@@ -1,0 +1,19 @@
+RewriteEngine On
+Options All -Indexes
+<Files .htaccess>
+Order Allow,Deny
+Deny from all
+</Files>
+
+ErrorDocument 404 /kimngoc/error
+
+RewriteRule ^error$ kimngoc/404.php [L]
+
+RewriteRule ^admin-time$ admin-time.php [L]
+RewriteRule ^admin-update-time$ admin-update-time.php [L]
+RewriteRule ^tinnhan$ message.php [L]
+
+
+
+
+

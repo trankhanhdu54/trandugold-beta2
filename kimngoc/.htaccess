@@ -1,0 +1,19 @@
+RewriteEngine On
+Options All -Indexes
+<Files .htaccess>
+Order Allow,Deny
+Deny from all
+</Files>
+
+ErrorDocument 404 /kimngoc/error
+
+RewriteRule ^error$ kimngoc/404.php [L]
+
+RewriteRule ^dashboard$ admin.php [L]
+RewriteRule ^admin-profile$ admin-profile.php [L]
+RewriteRule ^dangnhap$ index.php [L]
+
+
+
+
+
